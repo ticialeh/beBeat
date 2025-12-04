@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>beBeat - Byte a Byte, Beat a Beat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <img src="./assets/img/Bbeatlogo.png" alt="Logo beBeat" class="header__logo">
+      <h2 class="site-subtitle">Byte a Byte, Beat a Beat</h2>
+      <nav class="nav">
+        <a href="documentacao.html" class="nav__link">Documentação</a>
+        <a href="extras.html" class="nav__link">Autores & Extras</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container grid">
+
+      <section id="sobre" class="card">
+        <div class="card__content">
+          <h3 class="card__title">O que é o beBeat?</h3>
+          <p>é um artefato interativo desenvolvido na disciplina de Sistemas Digitais e 
+    Introdução à Computação. Ele combina música, cores e reflexos em um mini jogo que utiliza LEDs, 
+    joystick e buzzer para desafiar a coordenação e o tempo de reação do jogador.</p>
+    <p>O projeto foi criado para aplicar conceitos de eletrônica, programação em Arduino e design de 
+    sistemas digitais, proporcionando uma experiência divertida e educativa.</p>
+        </div>
+      </section>
+
+      <section id="desafio" class="card">
+        <div class="card__content">
+          <h3 class="card__title">Teste seus reflexos!</h3>
+          <p>Quando uma cor é exibida pelos LEDs, o jogador deve reagir rapidamente utilizando o joystick. 
+    Cada resposta correta aumenta a pontuação, enquanto respostas lentas ou incorretas reduzem o desempenho.</p>
+    <p>O desafio é manter a concentração e a agilidade, acompanhando o ritmo da música e das cores.</p>
+        </div>
+      </section>
+
+      <section id="jogo" class="card card--game">
+        <div class="card__content">
+          <h3 class="card__title">Mini Jogo Interativo</h3>
+          <div class="hud">
+            <div class="hud__item"><strong>Pontuação:</strong> <span id="score">0</span></div>
+            <div class="hud__item"><strong>Status:</strong> <span id="status">Aguardando...</span></div>
+          </div>
+          <div id="game-area" class="game-area">🎮</div>
+          <p id="instrucao" class="instrucao">Observe a cor e reaja!</p>
+          <div class="controls">
+            <button id="btnStart" class="btn">Iniciar</button>
+            <button id="btnStop" class="btn btn--secondary">Parar</button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2025 beBeat. Todos os direitos reservados.</p>
+      <p>Contato: <a href="mailto:contato@bebeat.com">contato@bebeat.com</a></p>
+    </div>
+  </footer>
+
+  <script src="./scrip.js"></script>
+</body>
+</html>

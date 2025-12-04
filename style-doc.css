@@ -1,0 +1,170 @@
+<link rel="stylesheet" href="style.css">
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tema e tipografia */
+:root {
+  --bg-1: #1a1a2e;
+  --bg-2: #16213e;
+  --bg-3: #0f3460;
+  --text: #f1f1f1;
+  --accent-pink: #e94560;
+  --accent-cyan: #00adb5;
+  --accent-yellow: #ffd369;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(0, 173, 181, 0.6);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, var(--bg-1), var(--bg-2), var(--bg-3));
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  background: rgba(0,0,0,0.3);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-subtitle {
+  font-size: 1.1rem;
+  color: var(--accent-cyan);
+}
+
+/* Navegação */
+.nav {
+  display: flex;
+  gap: 14px;
+}
+
+.nav__link {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  padding: 8px 14px;
+  border: 1px solid rgba(0,173,181,0.4);
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+.nav__link:hover {
+  color: var(--accent-pink);
+  border-color: var(--accent-pink);
+  transform: translateY(-2px);
+}
+
+/* Main */
+.main {
+  padding: 40px 0 60px;
+}
+
+/* Grid de cards - agora só uma coluna */
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Card */
+.card {
+  background: var(--card-bg);
+  border: 2px solid var(--card-border);
+  border-radius: 18px;
+  box-shadow: 0 0 28px rgba(0, 173, 181, 0.25);
+  padding: 28px;
+  text-align: center; /* centraliza conteúdo */
+}
+.card h3 {
+  color: var(--accent-yellow);
+  margin-bottom: 14px;
+}
+.card p, .card li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Imagens */
+.card img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* Caixa de código */
+.code-box {
+  max-height: 400px;
+  overflow: auto;
+  background: #0f1320;
+  color: #e8e8e8;
+  padding: 12px;
+  border-radius: 12px;
+  font-family: monospace;
+  font-size: 0.95rem;
+  border: 1px solid rgba(0, 173, 181, 0.35);
+  text-align: left;
+}
+
+/* Botão */
+.btn {
+  background: var(--accent-pink);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+  display: inline-block;
+}
+.btn:hover {
+  background: #c53048;
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  background-color: rgba(0,0,0,0.35);
+  padding: 20px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.footer__inner {
+  text-align: center;
+  font-size: 0.95rem;
+}
+.footer__link {
+  color: var(--accent-cyan);
+}
+.footer__link:hover {
+  color: var(--accent-pink);
+}
+
+.header__logo {
+  max-width: 140px; /* controla a largura máxima */
+  height: auto;     /* mantém proporção */
+  display: block;
+}
+
